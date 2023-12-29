@@ -46,6 +46,10 @@ label {
   all: unset;
 }
 
+.page {
+  display: flex;
+}
+
 .content {
   display: flex;
   min-width: 711px;
