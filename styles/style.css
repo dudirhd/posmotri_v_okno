@@ -36,3 +36,255 @@ ul,
 ol {
   list-style: none;
 }
+
+input,
+label {
+  all: unset;
+}
+
+:focus {
+  all: unset;
+}
+
+.content {
+  display: flex;
+  min-width: 711px;
+  gap: 30px;
+  padding: 133px 30px;
+}
+
+.result {
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+.result__video-container {
+  width: 711px;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.search-form__fieldset {
+  border: 0;
+  width: 225px;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.search-form__textfield {
+  width: 100%;
+  appearance: none;
+  background: none;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: rgba(255, 255, 255, 0.70);
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.search-form__label {
+  cursor: pointer;
+  
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.search-form__label:focus {
+  border: 1px solid #fff;
+  border-radius: 0%;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1px;
+  margin-bottom: 2px;
+}
+
+.search-form__fieldset-gap {
+  margin-left: 5px;
+}
+
+input[type='checkbox'] + span {
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+}
+
+input[type='checkbox']:checked + span {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #1B1919;
+  background-color: #fff;
+  box-shadow:  0px 0px 1px 1px #fff;
+}
+
+.search-form__label-gap {
+  margin-right: 9px;
+  margin-left: 12px;
+}
+
+.button {
+  background-color: inherit;
+  color: #FFF;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 194px;
+  height: 34px;
+  border: 1px solid #fff;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 26px;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  overflow-y: auto;
+  overflow-x: none;
+  height: 298px;
+}
+
+
+
+.content__card-link {
+  color: #fff;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.content__video-card-title {
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  padding-top: 6px;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.2px;
+}
+
+.content__video-card {
+  display: flex;
+  
+}
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.content__details {
+  width: 394px;
+  gap: 30px;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+}
+
+.result__video-container {
+  position: relative;
+}
+
+.content__list {
+  position: relative;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__textfield {
+  appearance: none;
+  background: none;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.content__card-link {
+  display: block;
+}
+
+.content__card-link_current {
+  background: #545050;
+}
+
+.more-button {
+  width: 100%;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px; 
+}
+
+.search-form__label:active {
+  border: 1px solid #fff;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
+}   
+
+.content__card-link:has(:focus-visible)      {
+  border: 1px solid #fff;
+}
