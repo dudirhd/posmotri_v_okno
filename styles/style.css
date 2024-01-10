@@ -64,7 +64,7 @@ label {
 .result__video-container {
   height: 386px;
   width: 711px;
-  margin-bottom: 16px;
+  margin-bottom: 13px;
   position: relative;
 }
 
@@ -85,6 +85,7 @@ label {
   gap: 5px;
   border: 0;
   min-width: 225px;
+  margin-bottom: 3px;
 }
 
 .search-form__fieldset-title {
