@@ -44,7 +44,7 @@ label {
   all: unset;
 }
 
-:focus {
+:focus-visible {
   all: unset;
 }
 
@@ -77,10 +77,12 @@ label {
 .search-form {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 6px;
 }
 
 .search-form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   border: 0;
   min-width: 225px;
 }
@@ -89,8 +91,6 @@ label {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  padding-bottom: 5px;
-  padding-left: 5px;
 }
 
 .search-form__textfield {
@@ -114,8 +114,9 @@ label {
 
 .search-form__label {
   cursor: pointer;
-  margin-right: 0;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -125,14 +126,7 @@ label {
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
-  margin-right: 0;
-  margin-left: auto;
-}
-
-.search-form__pseudo-checkbox {
-  display: inline-flex;
-  margin-top: 2px;
-  margin-left: 1px;
+  align-self: center;
 }
 
 input[type='checkbox'] + span {
@@ -165,6 +159,19 @@ input[type='checkbox']:checked + span {
   cursor: pointer;
 }
 
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px; 
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
 .title {
   margin-bottom: 26px;
   font-family: Oswald, sans-serif;
@@ -192,6 +199,7 @@ input[type='checkbox']:checked + span {
   display: block;   
   color: #fff;
   outline: 2px;
+  margin: 2px;
   text-decoration: none;
 }
 
@@ -200,7 +208,7 @@ input[type='checkbox']:checked + span {
 }
 
 .content__video-card-title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -233,7 +241,6 @@ input[type='checkbox']:checked + span {
 }
 
 .content__details {
-  width: 394px;
   gap: 30px;
 }
 
